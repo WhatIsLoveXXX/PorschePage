@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+a {
+  color: #ef4a00;
+  text-decoration: none;
+}
+
+.app-inner {
+  display: flex;
+  flex-direction: column;
+
+  @include media(">=1280px") {
+    flex-direction: row;
+  }
+}

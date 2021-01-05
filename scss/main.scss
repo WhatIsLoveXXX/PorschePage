@@ -1,14 +1,7 @@
 @import "reset";
 @import "variables";
+@import "fonts";
 @import "../node_modules/include-media/dist/include-media";
-
-body {
-  //   background: $bg;
-  height: 100vh;
-}
-
-.bg {
-  //   background: rgba(255, 255, 255, 0.102);
-  //   height: 300px;
-  //   margin: auto;
-}
+@import "styles";
+@import "leftpage";
+@import "rightpage";
