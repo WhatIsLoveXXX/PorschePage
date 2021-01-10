@@ -24,7 +24,6 @@
               <li><a href="#">Home</a></li>
               <li><a href="#">Design</a></li>
               <li><a href="#">Models</a></li>
-              <li><a href="#">Perfomance</a></li>
               <li><a href="#">Find a Dealer</a></li>
             </ul>
           </nav>
@@ -33,6 +32,24 @@
 
         <div class="right-page" id="right-page">
           <div class="right-page-inner">
+            <div class="right-page-menu">
+              <input
+                type="text"
+                id="search"
+                placeholder="Search"
+                class="hidden"
+              />
+              <a href="#" class="search"></a>
+              <div class="menu-btn"></div>
+              <nav class="right-page-navigation">
+                <ul class="right-nav-list">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Models</a></li>
+                  <li><a href="#">Find a Dealer</a></li>
+                </ul>
+              </nav>
+            </div>
             <div class="right-page-car">PORSCHE <span>SINGER</span></div>
             <h1 class="right-page-title">
               <span>964</span> Dynamic <strong>&</strong> Lightweight
@@ -55,12 +72,16 @@
               <ul class="slider-list">
                 <li><img src="images/slider-img1.png" alt="img" /></li>
                 <li><img src="images/slider-img2.png" alt="img" /></li>
-                <li><img src="images/slider-img3.png" alt="img" /></li>
+                <li class="active">
+                  <img class="active" src="images/slider-img3.png" alt="img" />
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="../js/burger.js"></script>
+    <script src="../js/search.js"></script>
   </body>
 </html>

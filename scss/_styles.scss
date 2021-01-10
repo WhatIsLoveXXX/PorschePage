@@ -19,11 +19,26 @@ a {
   text-decoration: none;
 }
 
+.app {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(59, 59, 59, 1) 0%,
+    rgba(24, 24, 23, 1) 100%
+  );
+  background-position: 50% 50%;
+  min-height: 100vh;
+  display: flex;
+}
+
 .app-inner {
   display: flex;
   flex-direction: column;
+  max-width: 1680px;
+  width: 100%;
 
   @include media(">=1280px") {
     flex-direction: row;
+    margin: auto;
+    max-height: 1100px;
   }
 }

@@ -1,11 +1,13 @@
 .left-page {
-  background: url(../../images/leftpage-desk.png) 50% 0;
+  background: url(../../images/leftpage-desk.png);
   background-size: cover;
   height: 100vh;
   width: 100%;
 
   @include media(">=1280px") {
-    flex-basis: 1200px;
+    height: auto;
+    min-width: 250px;
+    max-width: 840px;
   }
 }
 
@@ -15,6 +17,11 @@
   height: 105px;
   display: flex;
   align-items: center;
+
+  @include media(">=1280px") {
+    padding: 69px 0px 0 60px;
+    max-width: 475px;
+  }
 
   img {
     width: 100%;
@@ -38,7 +45,7 @@
 .navigation {
   position: relative;
   font-size: 23px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
 
   @include media(">=1280px") {
